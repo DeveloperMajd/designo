@@ -1,0 +1,38 @@
+//* Fonts
+@font-face {
+  font-family: "Jost Medium";
+  src: url("../fonts/Jost-VariableFont_wght.ttf");
+  font-weight: 500;
+}
+
+@font-face {
+  font-family: "Jost Reqular";
+  src: url("../fonts/Jost-VariableFont_wght.ttf");
+  font-weight: 400;
+}
+
+@font-face {
+  font-family: "Jost italic";
+  src: url("../fonts/Jost-VariableFont_wght.ttf");
+  font-weight: 400;
+  font-style: italic;
+}
+
+$jost-medium: "Jost Medium", Arial Bold, Helvetica Bold, sans-serif;
+$jost-reqular: "Jost Reqular", Arial, Helvetica, sans-serif;
+$jost-italic: "Jost italic", Arial, Helvetica, sans-serif;
+
+//* Colors
+$peach: #e7816b;
+$light-peach: #ffad9b;
+
+$black: #1d1c1e;
+$white: #ffffff;
+
+$dark-grey: #333136;
+$light-grey: #f1f3f5;
+
+//* Sections padding
+$section-padding-mobile: 1.5rem;
+$section-padding-tablet: 2.5rem;
+$section-padding-desktop: 10.25rem;

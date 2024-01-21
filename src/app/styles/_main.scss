@@ -1,0 +1,152 @@
+html {
+  scroll-behavior: auto;
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+  scroll-behavior: smooth;
+  -webkit-font-smoothing: antialiased;
+  outline: none;
+  overflow-wrap: break-word;
+}
+
+img {
+  &::selection {
+    background-color: rgba($color: $light-peach, $alpha: 0.5);
+  }
+}
+body {
+  font-family: $jost-reqular;
+  font-size: 1rem;
+  line-height: 1.625rem;
+  color: $dark-grey;
+
+  &::selection {
+    color: $white;
+    background-color: $light-peach;
+    
+  }
+}
+
+p {
+  &::selection {
+    color: $white;
+    background-color: $light-peach;
+  }
+}
+
+.container {
+  justify-content: space-between;
+  align-items: center !important;
+
+  padding: 2.125rem $section-padding-mobile;
+  @include tablet {
+    padding: 4rem $section-padding-tablet;
+  }
+  @include desktop {
+    padding: 4.125rem 0;
+  }
+}
+
+h1,
+.h1 {
+  font-family: $jost-medium;
+  font-size: 3rem;
+  line-height: 3rem;
+  color: $black;
+}
+h2,
+.h2 {
+  font-family: $jost-medium;
+  font-size: 2.5rem;
+  line-height: 3rem;
+  letter-spacing: 0.125rem;
+  color: $black;
+}
+h3,
+.h3 {
+  font-family: $jost-medium;
+  font-size: 1.25rem;
+  line-height: 1.625rem;
+  letter-spacing: 0.313rem;
+  color: $dark-grey;
+}
+
+.btn {
+  border-radius: 8px;
+  font-size: 0.938rem;
+  text-transform: uppercase;
+
+  &.onDark {
+    color: $dark-grey;
+    background-color: $white;
+    box-shadow: 0 4px 4px 0 rgba($color: #000000, $alpha: 0.25);
+
+    &:hover {
+      color: $white;
+      background-color: $light-peach;
+      box-shadow: none;
+    }
+  }
+  &.onLight {
+    color: $white;
+    background-color: $peach;
+
+    &:hover {
+      background-color: $light-peach;
+    }
+  }
+}
+
+.nav-item {
+  font-family: $jost-reqular;
+  text-transform: uppercase;
+  font-size: 1.5rem;
+  line-height: 1.5625rem;
+  letter-spacing: 0.125rem;
+  color: $white;
+  cursor: pointer;
+
+  @include tablet {
+    font-size: 0.875rem;
+    line-height: 0.875rem;
+    color: $dark-grey;
+  }
+}
+
+.form-input {
+  background-color: transparent;
+  border-bottom: 0.0625rem solid $white;
+  color: rgba($color: $white, $alpha: 0.5);
+  font-family: $jost-medium;
+  font-size: 0.9375rem;
+  line-height: 1.625rem;
+
+  padding: 0 0.5rem 0.75rem 1rem;
+  margin-bottom: 1.5rem;
+
+  &:last-child {
+    margin-bottom: 0;
+  }
+
+  &.filled {
+    color: $white;
+    border-bottom: 0.25rem solid $white;
+  }
+}
+
+.error-massage {
+  font-family: $jost-italic;
+  font-size: 0.75rem;
+  line-height: 1.625rem;
+  color: $white;
+
+  .error-icon {
+    width: 1.25rem;
+    height: 1.25rem;
+    margin-left: 0.5rem;
+  }
+}
