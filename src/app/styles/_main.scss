@@ -29,17 +29,6 @@ body {
     font-size: 1rem;
     line-height: 1.625rem;
   }
-  &::selection {
-    color: $white;
-    background-color: $light-peach;
-  }
-}
-
-p {
-  &::selection {
-    color: $white;
-    background-color: $light-peach;
-  }
 }
 
 section {
@@ -48,18 +37,24 @@ section {
   @include desktop {
     margin-bottom: 10rem;
   }
+  @include fullhd {
+    margin-inline: $section-padding-desktop;
+  }
 }
 
 .container {
   overflow: hidden;
   justify-content: space-between;
   align-items: center !important;
-  padding: 2.125rem $section-padding-mobile;
+  padding: 0 $section-padding-mobile;
   @include tablet {
-    padding: 4rem $section-padding-tablet;
+    padding: 0 $section-padding-tablet;
   }
   @include desktop {
-    padding: 4.125rem 0;
+    padding: 0;
+  }
+  @include fullhd {
+    // margin: 0 $section-padding-desktop;
   }
 
   &.is-full-width {
@@ -67,29 +62,35 @@ section {
     @include mobile {
       padding: 0;
     }
-    
   }
 }
 
+//*
 h1,
 .h1 {
   font-family: $jost-medium;
   font-size: 2rem;
   line-height: 2.25rem;
-  color: $black;
 
   @include tablet {
     font-size: 3rem;
     line-height: 3rem;
   }
 }
+
 h2,
 .h2 {
   font-family: $jost-medium;
-  font-size: 2.5rem;
-  line-height: 3rem;
-  letter-spacing: 0.125rem;
-  color: $black;
+  font-size: 1.75rem;
+  line-height: 2.25rem;
+  letter-spacing: 0.0875rem;
+  color: $white;
+
+  @include desktop {
+    font-size: 2.5rem;
+    line-height: 3rem;
+    letter-spacing: 0.125rem;
+  }
 }
 h3,
 .h3 {
