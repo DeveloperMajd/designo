@@ -1,0 +1,132 @@
+.content-showcase {
+  .content-wrapper {
+    overflow: hidden;
+    background-color: $peach;
+    position: relative;
+    padding: 5rem 1.5rem 0 1.5rem;
+
+    @include tablet {
+      padding: 3.75rem 3.625rem 0 3.625rem;
+      border-radius: 0.9375rem;
+    }
+    @include desktop {
+      border-radius: 0.9375rem;
+      padding: 9.0625rem 0 0 5.9375rem;
+    }
+  }
+  .bg-pattern-wrapper {
+    position: absolute;
+    top: 50%;
+    right: -40%;
+    transform: translateY(-50%);
+    z-index: 1;
+    @include tablet {
+      right: -10%;
+    }
+    @include desktop {
+      right: -15%;
+    }
+    @include widescreen {
+      right: 0;
+      top: 0;
+      bottom: 0;
+      transform: none;
+    }
+
+    svg {
+      width: 100%;
+      height: 100%;
+    }
+  }
+
+  .column,
+  .columns {
+    padding: 0;
+    margin: 0;
+  }
+
+  .columns {
+    display: flex;
+    flex-direction: column;
+
+    @include desktop {
+      flex-direction: row;
+    }
+  }
+  .text-col {
+    color: $white;
+    text-align: center;
+    margin-bottom: 2.5rem;
+    z-index: 2;
+    position: relative;
+    @include tablet {
+      //   margin-bottom: 4.3125rem;
+    }
+    @include desktop {
+      text-align: left;
+      margin-bottom: 9.0625rem;
+    }
+    h1 {
+      color: $white;
+      margin-bottom: 0.875rem;
+
+      @include tablet {
+        margin-bottom: 0.5rem;
+      }
+      @include desktop {
+        margin-bottom: 0.6875rem;
+      }
+    }
+    p {
+      margin-bottom: 1.5rem;
+      @include tablet {
+        margin-bottom: 1.1875rem;
+      }
+      @include desktop {
+        margin-bottom: 2.5rem;
+      }
+    }
+
+    .btn-wrapper {
+      width: 100%;
+      display: flex;
+      justify-content: center;
+      @include desktop {
+        justify-content: flex-start;
+      }
+    }
+  }
+  .img-col {
+    z-index: 2;
+    display: flex;
+    justify-content: center;
+
+    img {
+      margin-bottom: -50%;
+      transform: scale(1.5);
+    }
+
+    @include tablet {
+      img {
+        margin-bottom: -40%;
+        transform: scale(1.4);
+      }
+    }
+    @include desktop {
+      img {
+        position: absolute;
+        margin-bottom: 0;
+        top: 0rem;
+        right: -4.5rem;
+        transform: none;
+      }
+    }
+
+    @include widescreen {
+      img {
+        top: -3rem;
+        right: -5rem;
+      }
+    }
+  }
+}

@@ -14,20 +14,24 @@ html {
 }
 
 img {
+  display: block;
   &::selection {
     background-color: rgba($color: $light-peach, $alpha: 0.5);
   }
 }
 body {
   font-family: $jost-reqular;
-  font-size: 1rem;
-  line-height: 1.625rem;
+  font-size: 0.9375rem;
+  line-height: 1.5625rem;
   color: $dark-grey;
 
+  @include tablet {
+    font-size: 1rem;
+    line-height: 1.625rem;
+  }
   &::selection {
     color: $white;
     background-color: $light-peach;
-    
   }
 }
 
@@ -38,10 +42,18 @@ p {
   }
 }
 
+section {
+  margin-bottom: 7.5rem;
+
+  @include desktop {
+    margin-bottom: 10rem;
+  }
+}
+
 .container {
+  overflow: hidden;
   justify-content: space-between;
   align-items: center !important;
-
   padding: 2.125rem $section-padding-mobile;
   @include tablet {
     padding: 4rem $section-padding-tablet;
@@ -49,14 +61,27 @@ p {
   @include desktop {
     padding: 4.125rem 0;
   }
+
+  &.is-full-width {
+    padding-block: 0;
+    @include mobile {
+      padding: 0;
+    }
+    
+  }
 }
 
 h1,
 .h1 {
   font-family: $jost-medium;
-  font-size: 3rem;
-  line-height: 3rem;
+  font-size: 2rem;
+  line-height: 2.25rem;
   color: $black;
+
+  @include tablet {
+    font-size: 3rem;
+    line-height: 3rem;
+  }
 }
 h2,
 .h2 {
@@ -79,6 +104,9 @@ h3,
   border-radius: 8px;
   font-size: 0.938rem;
   text-transform: uppercase;
+  width: fit-content;
+  padding: 1rem 1.5rem;
+  cursor: pointer;
 
   &.onDark {
     color: $dark-grey;
