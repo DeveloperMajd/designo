@@ -29,7 +29,7 @@ export const Navbar = () => {
     },
   };
   return (
-    <nav className="navbar">
+    <section className="navbar">
       <div className="container is-flex">
         <div className="logo">
           <Image src={Logo} alt="logo" />
@@ -64,6 +64,6 @@ export const Navbar = () => {
         </div>
         <div className="overlay" onClick={() => setIsOpen(false)}></div>
       </motion.div>
-    </nav>
+    </section>
   );
 };

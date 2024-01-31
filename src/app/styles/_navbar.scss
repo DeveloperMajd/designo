@@ -1,6 +1,6 @@
 .navbar {
   position: relative;
-  margin: 4rem 0;
+  margin-block: 4rem;
 
   .logo {
     width: 12.625rem;
@@ -51,11 +51,7 @@
         text-decoration: none;
         outline: none;
         width: fit-content;
-        &::selection {
-          color: $white;
-          background-color: $light-peach;
-          
-        }
+      
         &::before {
           content: "";
           position: absolute;

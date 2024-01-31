@@ -2,6 +2,10 @@
   padding: 0;
   background-color: $black;
   color: $white;
+
+  section {
+    margin-bottom: 0;
+  }
   .logo {
     width: 12.625rem;
     height: 1.6875rem;
@@ -78,10 +82,8 @@
           line-height: 0.875rem;
         }
 
-        &::selection {
-          color: $white;
-          background-color: $light-peach;
-        }
+      
+        
 
         &::before {
           content: "";

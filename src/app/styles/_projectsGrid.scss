@@ -1,10 +1,5 @@
 .projects-grid {
-  // * {
-  //   &::selection {
-  //     color: $white;
-  //     background-color: $peach;
-  //   }
-  // }
+
 
   .tile {
     @include tablet-only {
@@ -28,6 +23,10 @@
     .tile-image {
       img {
         border-radius: 0.9375rem;
+
+        &::selection {
+          background: none;
+        }
       }
     }
 
@@ -41,12 +40,7 @@
       text-transform: uppercase;
       z-index: 2;
 
-      * {
-        &::selection {
-          color: $white;
-          background-color: $peach;
-        }
-      }
+   
 
       .title {
         margin-bottom: 0.75rem;

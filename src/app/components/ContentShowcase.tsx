@@ -5,8 +5,8 @@ import BgPattern from "../assets/home/desktop/bg-pattern-hero-home.svg";
 import PhoneImage from "../assets/home/desktop/image-hero-phone.png";
 export const ContentShowcase = () => {
   return (
-    <section className="content-showcase">
-      <div className="container is-full-width">
+    <section className="content-showcase is-full-width">
+      <div className="container">
         <div className="content-wrapper">
           <div className="bg-pattern-wrapper">
             <BgPattern />

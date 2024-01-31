@@ -1,5 +1,6 @@
 import { ContentShowcase } from "./components/ContentShowcase";
 import { Footer } from "./components/Footer";
+import { InfoHighlights } from "./components/InfoHighlights";
 import { Navbar } from "./components/Navbar";
 import { ProjectsGrid } from "./components/ProjectsGrid";
 
@@ -9,6 +10,7 @@ export default function Home() {
       <Navbar />
       <ContentShowcase />
       <ProjectsGrid data="Three-grid" />
+      <InfoHighlights />
       <Footer />
     </main>
   );
