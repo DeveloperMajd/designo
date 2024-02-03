@@ -2,7 +2,7 @@
 
 import Image from "next/image";
 import Logo from "../assets/shared/desktop/logo-dark.png";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import Hamburger from "hamburger-react";
 import { motion } from "framer-motion";
 import Link from "next/link";
@@ -28,14 +28,31 @@ export const Navbar = () => {
       },
     },
   };
+  useEffect(() => {
+    const html = document.documentElement;
+
+    if (isOpen) {
+      // Save the original overflow value
+      const originalOverflow = html.style.overflow;
+
+      // Set overflow to hidden
+      html.style.overflow = "hidden";
+
+      // Cleanup function to reset overflow back to the original value
+      return () => {
+        html.style.overflow = originalOverflow;
+      };
+    }
+  }, [isOpen]);
+
   return (
-    <section className="navbar">
+    <div className="navbar">
       <div className="container is-flex">
         <div className="logo">
           <Image src={Logo} alt="logo" />
         </div>
         <div className="hamburger-wrapper is-hidden-tablet">
-          <Hamburger toggled={isOpen} toggle={setIsOpen} />
+          <Hamburger toggled={isOpen} toggle={setIsOpen} size={24} />
         </div>
         <div className="nav-items-wrapper is-hidden-mobile">
           <div className="nav-items">
@@ -64,6 +81,6 @@ export const Navbar = () => {
         </div>
         <div className="overlay" onClick={() => setIsOpen(false)}></div>
       </motion.div>
-    </section>
+    </div>
   );
 };

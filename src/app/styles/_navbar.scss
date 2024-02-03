@@ -1,27 +1,45 @@
 .navbar {
   position: relative;
-  margin-block: 4rem;
+  background-color: $white;
+  display: flex;
+  justify-content: center;
 
   .logo {
+    margin-top: 0.25rem;
     width: 12.625rem;
     height: 1.6875rem;
+    @include tablet {
+      margin-top: 0;
+    }
   }
 
   .container {
     z-index: 10;
     background-color: $white;
+    padding: 1.5rem .8rem 1.3rem 1.5rem;
+
+    @include tablet {
+      padding: 4rem $section-padding-tablet;
+    }
+    @include desktop {
+      margin: 4rem 0;
+      padding: 0;
+    }
+    @include fullhd {
+      margin: 4rem $section-padding-fullhd;
+      padding: 0;
+    }
   }
 
   .nav-items-wrapper {
     display: flex;
     flex-direction: column;
     z-index: 1;
-
     @include mobile {
       position: absolute;
       inset: 0;
       top: 100%;
-      height: calc(100dvh - 7.25rem);
+      height: calc(100dvh );
     }
     @include tablet {
       position: relative;
@@ -51,7 +69,7 @@
         text-decoration: none;
         outline: none;
         width: fit-content;
-      
+
         &::before {
           content: "";
           position: absolute;

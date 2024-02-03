@@ -1,3 +1,4 @@
+import { ContactShowcase } from "./components/ContactShowcase";
 import { ContentShowcase } from "./components/ContentShowcase";
 import { Footer } from "./components/Footer";
 import { InfoHighlights } from "./components/InfoHighlights";
@@ -11,6 +12,7 @@ export default function Home() {
       <ContentShowcase />
       <ProjectsGrid data="Three-grid" />
       <InfoHighlights />
+      <ContactShowcase />
       <Footer />
     </main>
   );

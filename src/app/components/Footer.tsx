@@ -7,7 +7,7 @@ export const Footer = () => {
   return (
     <footer className="footer">
       <section>
-        <div className="container">
+        <div className="container has-box">
           <div className="columns is-multiline">
             <div className="column nav-col is-12 is-flex">
               <div className="logo">
