@@ -12,7 +12,6 @@ export default function Home() {
       <ContentShowcase />
       <ProjectsGrid data="Three-grid" />
       <InfoHighlights />
-      <ContactShowcase />
       <Footer />
     </main>
   );

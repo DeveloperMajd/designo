@@ -31,7 +31,7 @@ export const ContentShowcase = () => {
               <Image
                 src={PhoneImage}
                 alt="hero phone"
-                style={{ objectFit: "cover" }}
+               
               />
             </div>
           </div>

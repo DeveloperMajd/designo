@@ -35,7 +35,11 @@ export const ProjectsGrid = ({ data }: projectsGridProp) => {
       {data === "Three-grid" ? (
         <div className="tile is-ancestor ">
           <div className="tile is-parent">
-            <Link href="#" className="tile is-child tile-item">
+            <Link
+              href="/webdesign"
+              target="_blank"
+              className="tile is-child tile-item"
+            >
               <div className="tile-image">
                 <Image
                   src={isMobile ? P1Mob : isTablet ? P1Tab : P1Desk}
@@ -106,7 +110,56 @@ export const ProjectsGrid = ({ data }: projectsGridProp) => {
           </div>
         </div>
       ) : (
-        <>Two Grid</>
+        <div className="tile is-ancestor ">
+          <div className="tile is-parent">
+            <Link href="#" className="tile is-child tile-item">
+              <div className="tile-image">
+                <Image
+                  src={isMobile ? P2Mob : isTablet ? P2Tab : P2Desk}
+                  alt="web design"
+                  style={{
+                    objectFit: "cover",
+                    objectPosition: "center",
+                    width: "100%",
+                  }}
+                />
+              </div>
+              <div className="tile-content">
+                <div className="title h2">app design</div>
+                <div className="link">
+                  <span>view projects</span>
+                  <span className="arrow">
+                    <Arrow />
+                  </span>
+                </div>
+              </div>
+            </Link>
+          </div>
+          <div className="tile is-parent">
+            <Link href="#" className="tile is-child tile-item">
+              <div className="tile-image">
+                <Image
+                  src={isMobile ? P3Mob : isTablet ? P3Tab : P3Desk}
+                  alt="web design"
+                  style={{
+                    objectFit: "cover",
+                    objectPosition: "center",
+                    width: "100%",
+                  }}
+                />
+              </div>
+              <div className="tile-content">
+                <div className="title h2">graphic design</div>
+                <div className="link">
+                  <span>view projects</span>
+                  <span className="arrow">
+                    <Arrow />
+                  </span>
+                </div>
+              </div>
+            </Link>
+          </div>
+        </div>
       )}
     </>
   );

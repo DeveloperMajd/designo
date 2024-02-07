@@ -1,6 +1,4 @@
 .projects-grid {
-
-
   .tile {
     @include tablet-only {
       display: block;
@@ -21,9 +19,10 @@
       }
     }
     .tile-image {
+      height: 100%;
       img {
         border-radius: 0.9375rem;
-
+        height: 100%;
         &::selection {
           background: none;
         }
@@ -40,8 +39,6 @@
       text-transform: uppercase;
       z-index: 2;
 
-   
-
       .title {
         margin-bottom: 0.75rem;
 
@@ -53,6 +50,9 @@
         font-family: $jost-medium;
         font-size: 0.9375rem;
         letter-spacing: 0.3125rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
       }
       .arrow {
         margin-left: 1rem;
