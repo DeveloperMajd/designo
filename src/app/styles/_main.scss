@@ -13,7 +13,8 @@ html {
   overflow-wrap: break-word;
 }
 
-img,svg {
+img,
+svg {
   display: block;
   &::selection {
     background-color: rgba($color: $light-peach, $alpha: 0.5);
@@ -215,8 +216,11 @@ h4,
   }
 }
 
-.column,
-.columns {
-  padding: 0;
+.columns, .column {
   margin: 0;
+  padding: 0;
+
+  &:last-child {
+    margin-bottom: 0;
+  }
 }

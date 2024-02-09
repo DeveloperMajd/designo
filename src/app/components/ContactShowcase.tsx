@@ -9,7 +9,7 @@ export const ContactShowcase = () => {
         <div className="bg-wrapper">
           <BgImage />
         </div>
-        <div className="columns is-multiline is-centered content-wrapper">
+        <div className="columns is-multiline is-centered content-wrapper m-0">
           <div className="column is-12-mobile is-10-tablet is-6-desktop content">
             <div className="title h4">Let’s talk about your project</div>
             <p className="text">
