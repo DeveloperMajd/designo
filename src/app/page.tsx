@@ -1,5 +1,5 @@
 import { ContactShowcase } from "./components/ContactShowcase";
-import { ContentShowcase } from "./components/ContentShowcase";
+import { HomepageBanner } from "./components/HomepageBanner";
 import { Footer } from "./components/Footer";
 import { InfoHighlights } from "./components/InfoHighlights";
 import { Navbar } from "./components/Navbar";
@@ -9,7 +9,7 @@ export default function Home() {
   return (
     <main>
       <Navbar />
-      <ContentShowcase />
+      <HomepageBanner />
       <ProjectsGrid data="Three-grid" />
       <InfoHighlights />
       <Footer />

@@ -4,7 +4,7 @@ import Image from "next/image";
 import BgPattern from "../assets/home/desktop/bg-pattern-hero-home.svg";
 import PhoneImage from "../assets/home/desktop/image-hero-phone.png";
 import BgShape from "../assets/shared/desktop/bg-pattern-leaf.svg";
-export const ContentShowcase = () => {
+export const HomepageBanner = () => {
   return (
     <section className="content-showcase is-full-width">
       <div className="container">
@@ -28,18 +28,14 @@ export const ContentShowcase = () => {
               </div>
             </div>
             <div className="column is-12-tablet is-6-desktop img-col">
-              <Image
-                src={PhoneImage}
-                alt="hero phone"
-               
-              />
+              <Image src={PhoneImage} alt="hero phone" />
             </div>
           </div>
         </div>
       </div>
 
       {/* Todo: add condition props (has-bg-shape) */}
-      <div className="bg-shape is-left-bottom is-hidden-touch">
+      <div className="bg-pattern is-left-bottom is-hidden-touch">
         <BgShape />
       </div>
     </section>

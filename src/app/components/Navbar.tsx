@@ -48,15 +48,15 @@ export const Navbar = () => {
   return (
     <div className="navbar">
       <div className="container is-flex">
-        <div className="logo">
+        <Link href="/" className="logo">
           <Image src={Logo} alt="logo" />
-        </div>
+        </Link>
         <div className="hamburger-wrapper is-hidden-tablet">
           <Hamburger toggled={isOpen} toggle={setIsOpen} size={24} />
         </div>
         <div className="nav-items-wrapper is-hidden-mobile">
           <div className="nav-items">
-            <Link href="/" className="nav-item">
+            <Link href="/about" className="nav-item">
               out compoany
             </Link>
             <Link href="/" className="nav-item">

@@ -63,7 +63,7 @@ export const ProjectsGrid = ({ data }: projectsGridProp) => {
             </Link>
           </div>
           <div className="tile is-parent is-vertical">
-            <Link href="#" className="tile is-child tile-item">
+            <Link href="/appdesing" className="tile is-child tile-item">
               <div className="tile-image">
                 <Image
                   src={isMobile ? P2Mob : isTablet ? P2Tab : P2Desk}
@@ -85,7 +85,7 @@ export const ProjectsGrid = ({ data }: projectsGridProp) => {
                 </div>
               </div>
             </Link>
-            <Link href="#" className="tile is-child tile-item">
+            <Link href="graphic design" className="tile is-child tile-item">
               <div className="tile-image">
                 <Image
                   src={isMobile ? P3Mob : isTablet ? P3Tab : P3Desk}
@@ -112,7 +112,7 @@ export const ProjectsGrid = ({ data }: projectsGridProp) => {
       ) : (
         <div className="tile is-ancestor ">
           <div className="tile is-parent">
-            <Link href="#" className="tile is-child tile-item">
+            <Link href="/appdesign" className="tile is-child tile-item">
               <div className="tile-image">
                 <Image
                   src={isMobile ? P2Mob : isTablet ? P2Tab : P2Desk}
@@ -136,7 +136,7 @@ export const ProjectsGrid = ({ data }: projectsGridProp) => {
             </Link>
           </div>
           <div className="tile is-parent">
-            <Link href="#" className="tile is-child tile-item">
+            <Link href="graphicdesign" className="tile is-child tile-item">
               <div className="tile-image">
                 <Image
                   src={isMobile ? P3Mob : isTablet ? P3Tab : P3Desk}

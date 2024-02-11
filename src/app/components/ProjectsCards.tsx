@@ -10,9 +10,9 @@ export const ProjectsCards = () => {
   return (
     <section className="projects-cards">
       <div className="container">
-        <div className="columns is-multiline main-columns">
+        <div className="columns is-multiline is-variable is-3-desktop main-columns">
           {/* card 1 */}
-          <div className="column is-12-mobile is-12-tablet is-3-desktop project-card">
+          <div className="column is-12-mobile is-12-tablet is-4-desktop project-card">
             <div className="columns">
               <div className="column is-12-mobile is-6-tablet is-12-desktop card-image">
                 <Image
@@ -33,7 +33,7 @@ export const ProjectsCards = () => {
             </div>
           </div>
           {/* card 2 */}
-          <div className="column is-12-mobile is-12-tablet is-3-desktop project-card">
+          <div className="column is-12-mobile is-12-tablet is-4-desktop project-card">
             <div className="columns">
               <div className="column is-12-mobile is-6-tablet is-12-desktop card-image">
                 <Image
@@ -56,7 +56,7 @@ export const ProjectsCards = () => {
             </div>
           </div>
           {/* card 3 */}
-          <div className="column is-12-mobile is-12-tablet is-3-desktop project-card">
+          <div className="column is-12-mobile is-12-tablet is-4-desktop project-card">
             <div className="columns">
               <div className="column is-12-mobile is-6-tablet is-12-desktop card-image">
                 <Image
@@ -78,7 +78,7 @@ export const ProjectsCards = () => {
             </div>
           </div>
           {/* card 4 */}
-          <div className="column is-12-mobile is-12-tablet is-3-desktop project-card">
+          <div className="column is-12-mobile is-12-tablet is-4-desktop project-card">
             <div className="columns">
               <div className="column is-12-mobile is-6-tablet is-12-desktop card-image">
                 <Image
@@ -99,7 +99,7 @@ export const ProjectsCards = () => {
             </div>
           </div>
           {/* card 5 */}
-          <div className="column is-12-mobile is-12-tablet is-3-desktop project-card">
+          <div className="column is-12-mobile is-12-tablet is-4-desktop project-card">
             <div className="columns">
               <div className="column is-12-mobile is-6-tablet is-12-desktop card-image">
                 <Image
@@ -120,7 +120,7 @@ export const ProjectsCards = () => {
             </div>
           </div>
           {/* card 6 */}
-          <div className="column is-12-mobile is-12-tablet is-3-desktop project-card">
+          <div className="column is-12-mobile is-12-tablet is-4-desktop project-card">
             <div className="columns">
               <div className="column is-12-mobile is-6-tablet is-12-desktop card-image">
                 <Image

@@ -70,27 +70,6 @@ section {
   position: relative;
   z-index: 1;
 }
-.bg-shape {
-  position: absolute;
-  z-index: -10;
-
-  &.is-left-bottom {
-    top: 50%;
-    left: -5rem;
-
-    @include fullhd {
-      left: -10.3125rem;
-    }
-  }
-  &.is-right-top {
-    bottom: 50%;
-    right: -5rem;
-    transform: rotate(180deg);
-    @include fullhd {
-      right: -10.3125rem;
-    }
-  }
-}
 
 h1,
 .h1 {
@@ -216,11 +195,33 @@ h4,
   }
 }
 
-.columns, .column {
+.columns,
+.column {
   margin: 0;
-  padding: 0;
 
   &:last-child {
     margin-bottom: 0;
+  }
+}
+
+.bg-pattern {
+  position: absolute;
+  z-index: -10;
+
+  &.is-left-bottom {
+    top: 50%;
+    left: -5rem;
+
+    @include fullhd {
+      left: -10.3125rem;
+    }
+  }
+  &.is-right-top {
+    bottom: 50%;
+    right: -5rem;
+    transform: rotate(180deg);
+    @include fullhd {
+      right: -10.3125rem;
+    }
   }
 }
