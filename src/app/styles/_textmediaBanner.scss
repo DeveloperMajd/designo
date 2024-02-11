@@ -39,11 +39,13 @@
     position: relative;
     @include tablet {
       border-radius: 0 0 0.9375rem 0.9375rem;
+      padding: 4rem 3.625rem;
     }
     @include desktop {
       border-radius: 0.9375rem 0 0 0.9375rem;
       text-align: left;
       padding: 8.5rem 6rem;
+
       display: flex;
       justify-content: center;
       align-items: center;

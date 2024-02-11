@@ -24,6 +24,13 @@
     top: 50%;
     right: 0;
     transform: translateY(-50%);
+
+    @include tablet {
+      left: 0;
+    }
+    @include desktop {
+      left: unset;
+    }
   }
 
   .container {
