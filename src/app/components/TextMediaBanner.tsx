@@ -19,7 +19,7 @@ export const TextMediaBanner = () => {
   const isDesktop = width > 1024;
 
   return (
-    <section className="text-media-banner is-full-width mb-0">
+    <section className="text-media-banner is-full-width">
       <div className="container">
         <div className="columns is-multiline">
           <div className="column is-12-mobile is-12-tablet is-5-desktop img-column p-0">
