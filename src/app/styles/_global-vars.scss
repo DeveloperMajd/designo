@@ -41,3 +41,9 @@ $section-padding-mobile: 1.5rem;
 $section-padding-tablet: 2.5rem;
 $section-padding-desktop: 5rem;
 $section-padding-fullhd: 10.3125rem;
+
+@mixin ultrahd {
+  @media screen and (min-width: 1920px) {
+    @content;
+  }
+}
