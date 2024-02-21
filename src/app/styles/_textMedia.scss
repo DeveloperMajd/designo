@@ -27,17 +27,17 @@
   .text-column {
     background-color: $faded-peach;
     text-align: center;
-    padding: 5rem 1.5rem;
+    padding: $container-padding-mobile;
     display: flex;
     align-items: center;
     position: relative;
     @include tablet {
       border-radius: 0 0 0.9375rem 0.9375rem;
-      padding: 4rem 3.625rem;
+      padding: $container-padding-tablet;
     }
     @include desktop {
       border-radius: 0 0.9375rem 0.9375rem 0;
-      padding: 8.5rem 6rem;
+      padding: $container-padding-desktop;
       text-align: left;
 
       &.img-right {
@@ -62,11 +62,11 @@
       top: unset;
     }
     @include desktop {
-        right: 0;
-        left: unset;
-        bottom: 0;
-        top: unset;
-        transform: rotateY(180deg); 
+      right: 0;
+      left: unset;
+      bottom: 0;
+      top: unset;
+      transform: rotateY(180deg);
     }
 
     &.img-right {
@@ -75,8 +75,7 @@
         left: 0;
         bottom: 0;
         top: unset;
-        transform: rotateY(0deg); 
-
+        transform: rotateY(0deg);
       }
     }
   }

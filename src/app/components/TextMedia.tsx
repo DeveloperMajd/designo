@@ -9,7 +9,7 @@ import ImgMobile from "../assets/about/mobile/image-world-class-talent.jpg";
 
 import BgPattern from "../assets/shared/desktop/bg-pattern-three-circles.svg";
 
-type textMediaType = "img-left" | "img-right";
+export type textMediaType = "img-left" | "img-right";
 
 interface textMediaProp {
   data: textMediaType;

@@ -20,15 +20,15 @@
 
   .container {
     background-color: $peach;
-    padding: 4rem 1.5rem;
+    padding: $container-padding-mobile;
 
     @include tablet {
-      padding: 3.5rem;
+      padding: $container-padding-tablet;
       border-radius: 0.9375rem;
     }
 
     @include desktop {
-      padding: 4rem;
+      padding: $container-padding-desktop;
     }
   }
 

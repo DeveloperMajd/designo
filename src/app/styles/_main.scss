@@ -127,6 +127,10 @@ h5,
     line-height: 3rem;
   }
 }
+
+strong {
+  font-family: $jost-bold;
+}
 .btn {
   border-radius: 8px;
   font-size: 0.938rem;
@@ -244,7 +248,6 @@ h5,
     @include fullhd {
       right: -10.3125rem;
       transform: translate(30%, 70%);
-
     }
     @include ultrahd {
       transform: translate(15%, 70%);

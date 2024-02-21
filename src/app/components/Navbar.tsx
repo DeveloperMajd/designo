@@ -59,10 +59,10 @@ export const Navbar = () => {
             <Link href="/about" className="nav-item">
               out compoany
             </Link>
-            <Link href="/" className="nav-item">
+            <Link href="/locations" className="nav-item">
               locations
             </Link>
-            <Link href="/" className="nav-item">
+            <Link href="/contact" className="nav-item">
               contact
             </Link>
           </div>
