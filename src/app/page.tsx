@@ -12,7 +12,7 @@ export default function Home() {
       <HomepageBanner />
       <ProjectsGrid data="Three-grid" />
       <InfoHighlights />
-      <Footer />
+      <Footer data={true} />
     </main>
   );
 }

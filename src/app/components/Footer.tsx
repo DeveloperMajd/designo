@@ -4,13 +4,19 @@ import Logo from "../assets/shared/desktop/logo-light.png";
 import { SocialIcons } from "./SocialIcons";
 import { ContactShowcase } from "./ContactShowcase";
 
-export const Footer = () => {
+type footerType = boolean;
+
+interface footerProps {
+  data: footerType;
+}
+
+export const Footer = ({ data }: footerProps) => {
   return (
     <>
-      <ContactShowcase />
+      {data && <ContactShowcase />}
       <footer className="footer">
         <section>
-          <div className="container has-box">
+          <div className={`container ${data ? "has-box" : ""}`}>
             <div className="columns is-multiline">
               <div className="column nav-col is-12 is-flex">
                 <div className="logo">

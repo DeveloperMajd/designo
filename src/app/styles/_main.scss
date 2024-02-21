@@ -132,12 +132,17 @@ strong {
   font-family: $jost-bold;
 }
 .btn {
+  font-family: $jost-medium;
   border-radius: 8px;
   font-size: 0.938rem;
   letter-spacing: 0.0625rem;
   text-transform: uppercase;
-  width: fit-content;
-  padding: 1rem 1.5rem;
+  width: 9.5rem;
+  height: 3.5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
   cursor: pointer;
 
   &.onDark {

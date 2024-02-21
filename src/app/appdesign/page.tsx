@@ -12,7 +12,7 @@ const page = () => {
       <PageBanner />
       <ProjectsCards />
       <ProjectsGrid data="Two-grid" />
-      <Footer />
+      <Footer data={true} />
     </main>
   );
 };

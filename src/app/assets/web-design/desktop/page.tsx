@@ -6,7 +6,7 @@ export const page = () => {
   return (
     <main>
       <Navbar />
-      <Footer />
+      <Footer data={true} />
     </main>
   );
 };

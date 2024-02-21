@@ -12,7 +12,7 @@ const about = () => {
       <TextMedia data="img-left" />
       <LocationsHightlights />
       <TextMedia data="img-right" />
-      <Footer />
+      <Footer data={true} />
     </div>
   );
 };
