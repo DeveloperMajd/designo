@@ -7,6 +7,7 @@ import Img3 from "../assets/shared/desktop/illustration-united-kingdom.svg";
 import Circle from "../assets/shared/desktop/bg-pattern-small-circle.svg";
 
 import BgShape from "../assets/shared/desktop/bg-pattern-leaf.svg";
+import Link from "next/link";
 
 export const LocationsHightlights = () => {
   return (
@@ -22,7 +23,9 @@ export const LocationsHightlights = () => {
             </div>
             <div className="content">
               <div className="title h3">canada</div>
-              <div className="btn onLight">see location</div>
+              <Link href="/locations" className="btn onLight">
+                see location
+              </Link>
             </div>
           </div>
           <div className="column is-12-tablet is-4-desktop">
@@ -34,7 +37,9 @@ export const LocationsHightlights = () => {
             </div>
             <div className="content">
               <div className="title h3">australia</div>
-              <div className="btn onLight">see location</div>
+              <Link href="locations" className="btn onLight">
+                see location
+              </Link>
             </div>
           </div>
           <div className="column is-12-tablet is-4-desktop">
@@ -46,7 +51,9 @@ export const LocationsHightlights = () => {
             </div>
             <div className="content">
               <div className="title h3">united kingdom</div>
-              <div className="btn onLight">see location</div>
+              <Link href="/locations" className="btn onLight">
+                see location
+              </Link>
             </div>
           </div>
         </div>

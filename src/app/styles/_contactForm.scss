@@ -10,8 +10,49 @@
     @include desktop {
       padding: $container-padding-desktop;
     }
-  }
+    .bg-pattern {
+      position: absolute;
+      z-index: 1;
+      background: linear-gradient(
+        to bottom,
+        rgba(93, 2, 2, 0.01%) 0%,
+        rgba(93, 2, 2, 49.76%) 100%
+      );
+      opacity: 0.2;
+      border-radius: 50%;
+      aspect-ratio: 1/1;
 
+      @include tablet {
+        width: 640px;
+
+        top: 0;
+        left: 0;
+        transform: translate(-25%, -25%);
+      }
+      @include desktop {
+        bottom: 0;
+        left: 0;
+        top: unset;
+        right: unset;
+        transform: translateX(-25%);
+      }
+      @include fullhd {
+        transform: unset;
+      }
+    }
+    .bg-pattern-mobile {
+      position: absolute;
+      top: 0;
+      left: 0;
+      z-index: 1;
+      @include tablet {
+        display: none;
+      }
+    }
+  }
+  .columns {
+    z-index: 2;
+  }
   .text-col {
     display: flex;
     flex-direction: column;
@@ -35,6 +76,7 @@
         margin-bottom: 0;
       }
       .control {
+        position: relative;
         input,
         textarea {
           background: transparent;
@@ -48,7 +90,6 @@
           font-family: $jost-medium;
           font-size: 1rem;
           line-height: 1.625rem;
-          cursor: pointer;
           &::placeholder {
             color: $white;
             font-family: $jost-medium;
@@ -60,6 +101,22 @@
           &:focus,
           &.has-value {
             border-bottom: 3px solid $white;
+          }
+        }
+        .error-msg {
+          position: absolute;
+          right: 0.9375rem;
+          top: 0;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+
+          span {
+            font-family: $jost-italic;
+            font-size: 0.75rem;
+            line-height: 1.625rem;
+            color: $white;
+            margin-right: 0.5rem;
           }
         }
       }
