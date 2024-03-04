@@ -2,15 +2,13 @@
 
 import { textMediaType } from "./TextMedia";
 import useWindowSize from "../hooks/useWindowSize";
-import Image from "next/image";
-
-import ImgCanadaDesktop from "../assets/locations/desktop/image-map-canada.png";
-import ImgCanadaTablet from "../assets/locations/tablet/image-map-canada.png";
 
 import CirclesMobile from "../assets/shared/desktop/bg-pattern-three-circles.svg";
 import CirclesTablet from "../assets/shared/desktop/bg-pattern-two-circles.svg";
 
 import Link from "next/link";
+
+import { MapContainer, TileLayer, CircleMarker, Popup } from "react-leaflet";
 
 interface LocationsProps {
   data: textMediaType;
@@ -31,16 +29,29 @@ export const Locations = ({ data }: LocationsProps) => {
               isMobile ? "is-mobile" : isTablet ? "is-tablet" : "is-desktop"
             }`}
           >
-            <Image
-              src={isDesktop ? ImgCanadaDesktop : ImgCanadaTablet}
-              alt="Canada"
-              style={{
-                objectFit: "cover",
-                objectPosition: "center",
-                width: "100%",
-                height: "100%",
-              }}
-            />
+            <MapContainer
+              center={[43.632064, -79.565409]}
+              zoom={13}
+              scrollWheelZoom={true}
+              zoomControl={false}
+              style={{ height: "100%", width: "100%" }}
+            >
+              <TileLayer
+                attribution="&copy; <a href='https://www.openstreetmap.org/copyright'>
+                OpenStreetMap</a> contributors"
+                url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
+              />
+              <CircleMarker
+                center={[43.632064, -79.565409]}
+                pathOptions={{ color: "#e7816b" }}
+                radius={10}
+              >
+                <Popup>
+                  Designo Central Office 3886 Wellington Street Toronto, Ontario
+                  M9C 3J5
+                </Popup>
+              </CircleMarker>
+            </MapContainer>
           </div>
           <div className="column is-12-tablet is-8-desktop content-col">
             <div className="content-wrapper">

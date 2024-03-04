@@ -82,8 +82,9 @@ export const ContactForm = () => {
             <div className="field">
               <div className="control has-icons-right">
                 <input
-                  className={`input ${phone ? "has-value" : ""}`}
+                  className={`input phone${phone ? "has-value" : ""}`}
                   type="number"
+                  inputMode="numeric"
                   placeholder="Phone"
                   value={phone}
                   onChange={(e) => setPhone(e.target.value)}

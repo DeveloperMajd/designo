@@ -26,25 +26,25 @@
     }
   }
 
-  .img-col {
-    img {
-      display: block;
-      aspect-ratio: 1/1;
+  // .img-col {
+  //   // img {
+  //   //   display: block;
+  //   //   aspect-ratio: 1/1;
 
-      @include tablet {
-        border-radius: 0.9375rem;
-        margin-bottom: 2rem;
-        max-height: 20.375rem;
-      }
-      @include desktop {
-        margin-bottom: 0;
-      }
-    }
+  //   //   @include tablet {
+  //   //     border-radius: 0.9375rem;
+  //   //     margin-bottom: 2rem;
+  //   //     max-height: 20.375rem;
+  //   //   }
+  //   //   @include desktop {
+  //   //     margin-bottom: 0;
+  //   //   }
+  //   // }
 
-    @include tablet {
-      margin-bottom: 2rem;
-    }
-  }
+  //   // @include tablet {
+  //   //   margin-bottom: 2rem;
+  //   // }
+  // }
 
   .content-wrapper {
     background-color: $faded-peach;

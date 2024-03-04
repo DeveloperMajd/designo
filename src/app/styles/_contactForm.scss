@@ -130,4 +130,10 @@
       justify-content: flex-end;
     }
   }
+
+  .phone[type="number"]::-webkit-inner-spin-button,
+  .phone[type="number"]::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+  }
 }
