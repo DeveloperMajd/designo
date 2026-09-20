@@ -1,36 +1,8 @@
-# See https://help.github.com/articles/ignoring-files/ for more about ignoring files.
-
-# dependencies
-/node_modules
-/.pnp
-.pnp.js
-.yarn/install-state.gz
-
-# testing
-/coverage
-
-# next.js
-/.next/
-/out/
-
-# production
-/build
-
-# misc
-.DS_Store
-*.pem
-
-# debug
-npm-debug.log*
-yarn-debug.log*
-yarn-error.log*
-
-# local env files
-.env*.local
-
-# vercel
-.vercel
-
-# typescript
-*.tsbuildinfo
-next-env.d.ts
+# This repo is a docs-only "front door": README, LICENSE and the dev Makefile.
+# The two app repos live in this folder as their own git repos
+# (designo_backend/ and designo_frontend/), so ignore everything by default.
+*
+!README.md
+!LICENSE
+!Makefile
+!.gitignore
