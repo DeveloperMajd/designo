@@ -32,12 +32,18 @@ not a code change or a redeploy.
   background every two minutes, so content edits go live without a rebuild
 - **Editable navigation and copy**: menus (`strapi-plugin-menus`), labels and contact
   details all come from the CMS
-- **Locations page with real maps**: Leaflet / OpenStreetMap, loaded client-side only
+- **Locations page with real maps**: the offices are server-rendered and the Leaflet /
+  OpenStreetMap maps load client-side, so "See Location" links land on the right office
 - **Contact form** with client-side validation and a hardened endpoint: server-side
   validation, HTML-escaped emails, `Reply-To` instead of a spoofed sender, and per-IP
-  plus daily rate limits
-- **Motion**: scroll-triggered animations with Framer Motion
+  plus daily rate limits. Messages are stored before any email is sent, so an SMTP
+  outage loses nothing; the auto-reply carries no visitor text, and stored messages are
+  deleted after 180 days
+- **Motion**: scroll-triggered animations with Motion
 - **Responsive** mobile / tablet / desktop layout with Bulma and SCSS
+- **Tested in CI**: unit and integration tests (Vitest) on both apps, end-to-end tests
+  (Playwright) with an accessibility check (axe) on the frontend; the backend only
+  deploys once its checks pass
 
 ## Architecture
 
@@ -76,7 +82,7 @@ Two independent repos, developed and deployed separately:
 | Repo | Stack | Deploys to |
 |---|---|---|
 | [`designo-backend`](https://github.com/DeveloperMajd/designo-backend) | Strapi 4.20, TypeScript, SQLite | `api.designo.developermajd.com`: Docker Compose on an Oracle Cloud VM behind Caddy |
-| [`designo-frontend`](https://github.com/DeveloperMajd/designo-frontend) | Next.js 15, React 19, TypeScript, SCSS + Bulma, Framer Motion, Leaflet | `designo.developermajd.com`: Vercel |
+| [`designo-frontend`](https://github.com/DeveloperMajd/designo-frontend) | Next.js 15, React 19, TypeScript, SCSS + Bulma, Motion, Leaflet | `designo.developermajd.com`: Vercel |
 
 ## What this project demonstrates
 
